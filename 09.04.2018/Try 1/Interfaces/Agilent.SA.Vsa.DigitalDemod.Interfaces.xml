@@ -1,0 +1,1393 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Agilent.SA.Vsa.DigitalDemod.Interfaces</name>
+    </assembly>
+    <members>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.CustomApskRing">
+            <summary>
+            This class contains the settings for one Custom APSK ring.
+            </summary>
+            <version>14.00</version>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.CustomApskRing.IsRingEnabled">
+            <summary>
+            Gets or sets a value indicating whether to include the ring in analysis.
+            </summary>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.CustomApskRing.IsRingValid">
+            <summary>
+            Gets a value indicating whether the configuration of the ring is valid relative to all other rings. Rings with
+            invalid configurations are automatically excluded from analysis (see <see cref="P:Agilent.SA.Vsa.DigitalDemod.CustomApskRing.IsRingEnabled"/>).
+            </summary>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.CustomApskRing.Magnitude">
+            <summary>
+            Gets or sets the Magnitude (radius) for a single Custom APSK ring.
+            </summary>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.CustomApskRing.NumberOfStates">
+            <summary>
+            Gets or sets the Number Of States for a single Custom APSK ring.
+            </summary>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.CustomApskRing.Phase">
+            <summary>
+            Gets or sets the Phase offset for a single Custom APSK ring.
+            </summary>
+        </member>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.CustomApskRingCollection">
+            <summary>
+            This collection contains the set of <see cref="T:Agilent.SA.Vsa.DigitalDemod.CustomApskRing"/> objects representing the
+            settings for each Custom APSK ring.
+            </summary>
+            <version>14.00</version>
+        </member>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.Format">
+            <summary>
+            Specifies the Digital Modulation Format.
+            </summary>
+            <seealso cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.Format"/>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Qam16">
+            <summary>
+            Specifies 16-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Qam32">
+            <summary>
+            Specifies 32-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Qam64">
+            <summary>
+            Specifies 64-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Qam256">
+            <summary>
+            Specifies 256-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Qpsk">
+            <summary>
+            Specifies QPSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.DifferentialQpsk">
+            <summary>
+            Specifies Differential QPSK (DQPSK) modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Pi4DifferentialQpsk">
+            <summary>
+            Specifies π/4 DQPSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.OffsetQpsk">
+            <summary>
+            Specifies Offset QPSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Bpsk">
+            <summary>
+            Specifies BPSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Psk8">
+            <summary>
+            Specifies 8-PSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Msk">
+            <summary>
+            Specifies MSK Type 1 modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Msk2">
+            <summary>
+            Specifies MSK Type 2 modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Fsk2">
+            <summary>
+            Specifies 2-state FSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Fsk4">
+            <summary>
+            Specifies 4-state FSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.DvbQam16">
+            <summary>
+            Specifies DVB 16-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.DvbQam32">
+            <summary>
+            Specifies DVB 32-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.DvbQam64">
+            <summary>
+            Specifies DVB 64-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Vsb8">
+            <summary>
+            Specifies 8-VSB modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Vsb16">
+            <summary>
+            Specifies 16-VSB modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Edge">
+            <summary>
+            Specifies EDGE (3π/8 8-PSK) modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Fsk8">
+            <summary>
+            Specifies 8-state FSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Fsk16">
+            <summary>
+            Specifies 16-state FSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Qam128">
+            <summary>
+            Specifies 128-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.DifferentialPsk8">
+            <summary>
+            Specifies Differential 8-PSK (D8PSK) modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Qam512">
+            <summary>
+            Specifies 512-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Qam1024">
+            <summary>
+            Specifies 1024-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Apsk16">
+            <summary>
+            Specifies 16-APSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Apsk16Dvb">
+            <summary>
+            Specifies 16-APSK (with DVB pilots) modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Apsk32">
+            <summary>
+            Specifies 32-APSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Apsk32Dvb">
+            <summary>
+            Specifies 32-APSK (with DVB pilots) modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.DvbQam128">
+            <summary>
+            Specifies DVB 128-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.DvbQam256">
+            <summary>
+            Specifies DVB 256-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Pi8DifferentialPsk8">
+            <summary>
+            Specifies π/8 D8PSK modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.CpmFM">
+            <summary>
+            Specifies Continuous Phase Modulation (CPM) modulation format.  Results presented in FM domain.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Star16Qam">
+            <summary>
+            Specifies Star 16-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Star32Qam">
+            <summary>
+            Specifies Star 32-QAM modulation format.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.CustomApsk">
+            <summary>
+            Specifies Custom APSK modulation format.
+            </summary>
+            <version>14.00</version>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.ShapedOffsetQpsk">
+            <summary>
+            Specifies Shaped OQPSK (SOQPSK) modulation format.
+            </summary>
+            <version>15.00</version>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Qam2048">
+            <summary>
+            Specifies 2048-QAM modulation format.
+            </summary>
+            <version>17.20</version>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Format.Qam4096">
+            <summary>
+            Specifies 4096-QAM modulation format.
+            </summary>
+            <version>17.20</version>
+        </member>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.Standard">
+            <summary>
+            Specifies which digital-demodulation standard preset to use. 
+            </summary>
+            <seealso cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/>
+            <seealso cref="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.Preset(Agilent.SA.Vsa.DigitalDemod.Standard)"/>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Nadc">
+            <summary>
+            Specifies the NADC standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Gsm">
+            <summary>
+            Specifies the GSM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Dect">
+            <summary>
+            Specifies the DECT standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.CdmaBaseStation">
+            <summary>
+            Specifies the CDMA Base Station standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.CdmaMobileTerminal">
+            <summary>
+            Specifies the CDMA Mobile Station standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Pdc">
+            <summary>
+            Specifies the PDC standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Php">
+            <summary>
+            Specifies the PHP standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Phs">
+            <summary>
+            Specifies the PHS standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Cdpd">
+            <summary>
+            Specifies the CDPD standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Tetra">
+            <summary>
+            Specifies the TETRA standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Apco">
+            <summary>
+            Specifies the APCO-25 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Dtv8">
+            <summary>
+            Specifies the DTV8 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Dtv16">
+            <summary>
+            Specifies the DTV16 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Dvb16">
+            <summary>
+            Specifies the DVB 16-QAM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Dvb32">
+            <summary>
+            Specifies the DVB 32-QAM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Dvb64">
+            <summary>
+            Specifies the DVB 64-QAM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Edge">
+            <summary>
+            Specifies the EDGE(3p/8 8-PSK) standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Bluetooth">
+            <summary>
+            Specifies the Bluetooth standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Ieee80211B">
+            <summary>
+            Specifies the WLAN 802.11b standard preset configuration [IEEE Standard. 802.11b-1999].
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.HiperlanLowBitrate">
+            <summary>
+            Specifies the HIPERLAN, Low Bit Rate (LBR), standard preset configuration [EN 600 352 V1.2.1 (1998-07)].
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.HiperlanHighBitrate">
+            <summary>
+            Specifies the HIPERLAN, High Bit Rate (HBR), standard preset configuration [EN 600 352 V1.2.1 (1998-07)].
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Wcdma">
+            <summary>
+            Specifies the W-CDMA standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Vdl3">
+            <summary>
+            Specifies the VDL Mode 3 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Zigbee868">
+            <summary>
+            Specifies the ZigBee 868 MHz standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Zigbee915">
+            <summary>
+            Specifies the ZigBee 915 MHz standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Zigbee2450">
+            <summary>
+            Specifies the ZigBee 2450 MHz standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk16CodingRateTwoThirds">
+            <summary>
+            Specifies the 16-APSK Code Rate 2/3 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk16CodingRateThreeFourths">
+            <summary>
+            Specifies the 16-APSK Code Rate 3/4 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk16CodingRateFourFifths">
+            <summary>
+            Specifies the 16-APSK Code Rate 4/5 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk16CodingRateFiveSixths">
+            <summary>
+            Specifies the 16-APSK Code Rate 5/6 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk16CodingRateEightNinths">
+            <summary>
+            Specifies the 16-APSK Code Rate 8/9 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk16CodingRateNineTenths">
+            <summary>
+            Specifies the 16-APSK Code Rate 9/10 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk32CodingRateThreeFourths">
+            <summary>
+            Specifies the 32-APSK Code Rate 3/4 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk32CodingRateFourFifths">
+            <summary>
+            Specifies the 32-APSK Code Rate 4/5 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk32CodingRateFiveSixths">
+            <summary>
+            Specifies the 32-APSK Code Rate 5/6 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk32CodingRateEightNinths">
+            <summary>
+            Specifies the 32-APSK Code Rate 8/9 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbApsk32CodingRateNineTenths">
+            <summary>
+            Specifies the 32-APSK Code Rate 9/10 standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Dvb128">
+            <summary>
+            Specifies the DVB 128-QAM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Dvb256">
+            <summary>
+            Specifies the DVB 256-QAM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.MilStd188181CCpmOption21">
+            <summary>
+            Specifies the MIL-STD 188-181C:CPM(Opt21) standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Apco25Phase2HarmonizedCpm">
+            <summary>
+            Specifies the APCO-25 Phase 2 H-CPM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Apco25Phase2HarmonizedDifferentialQpsk">
+            <summary>
+            Specifies the APCO-25 Phase 2 H-DQPSK standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbEuropeDocsisQam64">
+            <summary>
+            Specifies the J.83A / DVB-C (EUR) EU-DOCSIS 64-QAM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbEuropeDocsisQam256">
+            <summary>
+            Specifies the J.83A / DVB-C (EUR) EU-DOCSIS 256-QAM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbNorthAmericaDocsisQam64">
+            <summary>
+            Specifies the J.83B / DOCSIS (NA) 64-QAM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbNorthAmericaDocsisQam256">
+            <summary>
+            Specifies the J.83B / DOCSIS (NA) 256-QAM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.DvbJapanIsdbcQam64">
+            <summary>
+            Specifies the J.83C / ISDB-C (JPN) 64-QAM standard preset configuration.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.ShapedOffsetQpskTGIrig10604">
+            <summary>
+            Specifies the SOQPSK-TG (IRIG 106-04) Shaped Offset QPSK standard preset configuration.
+            </summary>
+            <version>15.00</version>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Wisun2Fsk50KbpsIndexOne">
+            <summary>
+            Specifies the 802.15.4g Wi-SUN 2-FSK standard, 50Kbps, Modulation index=1
+            </summary>
+            <version>17.20</version>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Wisun2Fsk100KbpsIndexOne">
+            <summary>
+            Specifies the 802.15.4g Wi-SUN 2-FSK standard, 100Kbps, Modulation index=1
+            </summary>
+            <version>17.20</version>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Wisun2Fsk100KbpsIndexOneHalf">
+            <summary>
+            Specifies the 802.15.4g Wi-SUN 2-FSK standard, 100Kbps, Modulation index=0.5
+            </summary>
+            <version>17.20</version>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Wisun2Fsk150KbpsIndexOneHalf">
+            <summary>
+            Specifies the 802.15.4g Wi-SUN 2-FSK standard, 150Kbps, Modulation index=0.5
+            </summary>
+            <version>17.20</version>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Wisun2Fsk200KbpsIndexOne">
+            <summary>
+            Specifies the 802.15.4g Wi-SUN 2-FSK standard, 200Kbps, Modulation index=1
+            </summary>
+            <version>17.20</version>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Wisun2Fsk200KbpsIndexOneHalf">
+            <summary>
+            Specifies the 802.15.4g Wi-SUN 2-FSK standard, 200Kbps, Modulation index=0.5
+            </summary>
+            <version>17.20</version>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.Standard.Wisun2Fsk300KbpsIndexOneHalf">
+            <summary>
+            Specifies the 802.15.4g Wi-SUN 2-FSK standard, 300Kbps, Modulation index=0.5
+            </summary>
+            <version>17.20</version>
+        </member>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.EqualizerMode">
+            <summary>
+            Specifies the mode of the digital-demodulation adaptive equalizer. 
+            </summary>
+            <seealso cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.EqualizerMode"/>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsEqualized"/>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.EqualizerMode.Run">
+            <summary>
+            Equalizer filter taps will adapt with each measurement update.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.EqualizerMode.Hold">
+            <summary>
+            Equalizer filter taps will remain static with each measurement update.
+            </summary>
+        </member>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter">
+            <summary>
+            Specifies the type of digital demodulation measurement filter to apply.
+            </summary>
+            <seealso cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.MeasurementFilter"/>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter.None">
+            <summary>
+            Specifies no measurement filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter.Rectangular">
+            <summary>
+            Specifies the rectangular measurement filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter.RootRaisedCosine">
+            <summary>
+            Specifies the Root Raised Cosine measurement filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter.Gaussian">
+            <summary>
+            Specifies the Gaussian measurement filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter.UserDefined">
+            <summary>
+            Specifies the User Defined measurement filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter.LowPass">
+            <summary>
+            Specifies the Low Pass measurement filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter.IS95BasePhaseCompensating">
+            <summary>
+            Specifies the IS-95 Base EQ measurement filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter.Edge">
+            <summary>
+            Specifies the EDGE(Window RC) measurement filter.
+            </summary>
+        </member>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter">
+            <summary>
+            Specifies the type of digital demodulation reference filter to apply.
+            </summary>
+            <seealso cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ReferenceFilter"/>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.Rectangular">
+            <summary>
+            Specifies the rectangular reference filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.RaisedCosine">
+            <summary>
+            Specifies the Raised Cosine reference filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.RootRaisedCosine">
+            <summary>
+            Specifies the Root Raised Cosine reference filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.Gaussian">
+            <summary>
+            Specifies the Gaussian reference filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.UserDefined">
+            <summary>
+            Specifies the User Defined reference filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.IS95Baseband">
+            <summary>
+            Specifies the IS-95 reference filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.Edge">
+            <summary>
+            Specifies the EDGE reference filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.HalfSine">
+            <summary>
+            Specifies the half Sine reference filter.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.RectangularOneSymbolDuration">
+            <summary>
+            Specifies the one symbol rectangular filter (CPM only).
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.RaisedCosineThreeSymbolDuration">
+            <summary>
+            Specifies the three symbol Raised Cosine filter (CPM only).
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.ShapedOffsetQpskTGIrig10604">
+            <summary>
+            Specifies the pulse filter defined for SOQPSK-TG in IRIG 106-104 (Shaped OQPSK only).
+            </summary>
+            <version>15.00</version>
+        </member>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.CpmIndex">
+            <summary>
+            Specifies the modulation index parameters used by CPM (FM) modulation analysis. In some cases, two values are used {h1,H2} representing a shift in modulation index on consecutive symbol-times. In other cases, only a single value {h1} is used for all symbol-times.
+            </summary>
+            <seealso cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.CpmIndex"/>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.CpmIndex.TwelveSixteenthsAndThirteenSixteenths">
+            <summary>
+            Specifies the CPM modulation index values {h1, h2} = {12/16, 13/16}.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.CpmIndex.SevenSixteenthsAndTenSixteenths">
+            <summary>
+            Specifies the CPM modulation index values {h1, h2} = {7/16, 10/16}.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.CpmIndex.SixSixteenthsAndSevenSixteenths">
+            <summary>
+            Specifies the CPM modulation index values {h1, h2} = {6/16, 7/16}.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.CpmIndex.FiveSixteenthsAndSixSixteenths">
+            <summary>
+            Specifies the CPM modulation index values {h1, h2} = {5/16, 6/16}.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.CpmIndex.FourSixteenthsAndFiveSixteenths">
+            <summary>
+            Specifies the CPM modulation index values {h1, h2} = {4/16, 5/16}.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.CpmIndex.MinimumShiftKeying">
+            <summary>
+            Specifies the CPM modulation index value h1 = 1/2 (h2 is not defined).
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.CpmIndex.Apco25Phase2">
+            <summary>
+            Specifies the CPM modulation index values h1 = 1/3 (h2 is not defined).
+            </summary>
+        </member>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.NormalizationReference">
+            <summary>
+            Reference used for normalization of IQ results and EVM.
+            </summary>
+            <version>16.20</version>
+            <seealso cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsNormalized"/>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.NormalizationReference.ConstellationMaximum">
+            <summary>
+            Normalize so that the outer-most corners of the
+            constellation have a magnitude of one.  For cross-QAM
+            constellations, the outer-most corners of the square are
+            used even though they are not really constellation points.
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.NormalizationReference.ReferenceRms">
+            <summary>
+            Normalize so that IQ Reference trace has an RMS level of one.
+            </summary>
+        </member>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.UserFilterValidation">
+            <summary>
+            Response values from validation of a data register as a UserFilter.
+            </summary>
+            <seealso cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/>
+            <seealso cref="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ValidateUserFilter(Agilent.SA.Vsa.DataRegister)"/>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.UserFilterValidation.Valid">
+            <summary>
+            Data register can be used as a UserFilter
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.UserFilterValidation.NullNotValid">
+            <summary>
+            Data register cannot be used as a UserFilter, data register is null
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.UserFilterValidation.EmptyNotValid">
+            <summary>
+            Data register cannot be used as a UserFilter, data register is empty
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.UserFilterValidation.NoDataObjectNotValid">
+            <summary>
+            Data register cannot be used as a UserFilter, data register has no data object
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.UserFilterValidation.ZeroPointsNotValid">
+            <summary>
+            Data register cannot be used as a UserFilter, data register has zero Points
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.UserFilterValidation.NoMetadataNotValid">
+            <summary>
+            Data register cannot be used as a UserFilter, data register has no metadata
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.UserFilterValidation.DataMarkedInvalidNotValid">
+            <summary>
+            Data register cannot be used as a UserFilter, data register data is invalid
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.UserFilterValidation.DataComplexNotValid">
+            <summary>
+            Data register cannot be used as a UserFilter, data register data is complex
+            </summary>
+        </member>
+        <member name="F:Agilent.SA.Vsa.DigitalDemod.UserFilterValidation.DataDomainNotValid">
+            <summary>
+            Data register cannot be used as a UserFilter, data register not time domain
+            </summary>
+        </member>
+        <member name="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension">
+            <summary>
+            The DigDemod object contains properties and members to control the digital demodulation measurement feature.
+            </summary>
+            <remarks>
+            The DigDemod object provides access to the analyzer's digital demodulation measurement features. The digital demodulation display features are controlled through the Trace object.  For more information, see the VSA application "About Option AYA: Digital Modulation Analysis" help topic.
+            Digital demodulation features are only available if Option AYA is installed.
+            </remarks>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.CastToExtensionType(System.Object)">
+            <summary>
+            This method casts the supplied object to the <see cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/> type. Some
+            tools are unable to use the generic methods provided on <see cref="T:Agilent.SA.Vsa.Measurement"/> class so
+            this is provided as an alternative.
+            </summary>
+            <param name="extension">The object to be cast to the measurement extension type.</param>
+            <returns>A correctly cast handle of type <see cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/>, or
+            null if the cast failed.</returns>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ExtensionType">
+            <summary>
+            Returns the type for instances this measurement extension. Some
+            tools are unable to use the generic methods provided on <see cref="T:Agilent.SA.Vsa.Measurement"/> class so
+            this is provided as an alternative.
+            </summary>
+            <returns>A <see cref="T:System.Type"/> object for the <see cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/> type.</returns>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.EqualizerReset">
+            <summary>
+            Gets or sets the equalizer filter state.
+            </summary>
+            <remarks>
+            Reset the digital demodulation equalization filter state. This method is ignored if the equalization 
+            filter is not turned on (<see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsEqualized"/> set to False).
+            For more information, see the Digital Demodulation "Using the Equalization Filter" in the VSA Application help. 
+            </remarks>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.RecallStateDefinitionsFile(System.String)">
+            <summary>
+            Recall state definition mappings from a file.
+            </summary>
+            <param name="fileName">The state definition file to recall.</param>
+            <exception cref="T:System.IO.FileFormatException">Invalid state definition file format</exception>
+            <remarks>
+            Recalls the digital demodulation state definitions from a file. You can recall a state definition 
+            file that was originally created for the 89400 analyzer or 89601A Vector Signal Analyzer.
+            The file contains lines that define the constellation state to symbol bit mapping for the different 
+            modulation formats. 
+            </remarks>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.Preset(Agilent.SA.Vsa.DigitalDemod.Standard)">
+            <summary>
+            Set the digital demodulation properties based upon the specified standard. 
+            </summary>
+            <param name="standard">The demodulation standard to configure</param>
+            <remarks>
+            This method lets you select a digital-demodulation standard 
+            setups. Selecting a standard configures the properties of <see cref="T:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension"/> to match that standard. 
+            For example, specifying <see cref="F:Agilent.SA.Vsa.DigitalDemod.Standard.Nadc"/> configures the 
+            analyzer to demodulate NADC signals.
+            </remarks>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.PresetStateDefinitions">
+            <summary>
+            Set the current state definitions mappings to default values. 
+            </summary>
+            <remarks>
+            Restores the digital demodulation measurement constellation state definitions to the default Values. 
+            </remarks>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.GetSyncPattern(System.String)">
+            <summary>
+            Provides the binary pattern for the specified sync search pattern name. 
+            </summary>
+            <param name="name">Name of sync search pattern to retrieve.</param>
+            <returns>Binary pattern for the specified sync search pattern name.</returns>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.SetSyncPattern(System.String,System.String)">
+            <summary>
+            Sets the binary pattern for the specified sync search pattern name.
+            </summary>
+            <param name="name">Name of sync search pattern to retrieve.</param>
+            <param name="pattern">Binary pattern to set for the specified sync search pattern name.</param>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.RemoveSyncPattern(System.String)">
+            <summary>
+            Remove the specified sync search pattern name.
+            </summary>
+            <param name="name">String that names the specified sync search pattern.</param>
+            <returns>True if the pattern is successfully removed, false otherwise</returns>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.RemoveAllSyncPatterns">
+            <summary>
+            Remove all sync search pattern names.
+            </summary>
+            <remarks>
+            This method removes all named sync search patterns.
+            Use <see cref="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.SetSyncPattern(System.String,System.String)"/> to name sync search patterns. 
+            </remarks>
+        </member>
+        <member name="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ValidateUserFilter(Agilent.SA.Vsa.DataRegister)">
+            <summary>
+            For digital demodulation, you can use data registers to create your own user-defined
+            filter for the measurement or reference filter. You can use this property to see if a data
+            register contains a valid filter definition. 
+            To have a valid filter definition, a data register must contain a valid, non-empty, 
+            complex, time-domain trace.
+            </summary>
+            <param name="value">The register name to query (like "D1").</param>
+            <returns>UserFilterValidation.Valid if the specified
+            data register contains a Valid filter definition; otherwise a different UserFilterValidation enumeration value.</returns>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.MeasurementFilterRegister"/>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ReferenceFilterRegister"/>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ApskRing2Ratio">
+            <summary>
+            Gets or sets the ratio between the second APSK ring radius and the inner ring radius.
+            </summary>
+            <remarks>
+            APSK R2 / R1 determines the Ring 2 to Ring 1 ratio for APSK format measurements.
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ApskRing3Ratio">
+            <summary>
+            Gets or sets the ratio between the 3rd APSK ring radius and the inner ring radius. 
+            </summary>
+            <remarks>
+            APSK R3 / R1 determines the Ring 3 to Ring 1 ratio for APSK format measurements. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ClockAdjustment">
+            <summary>
+            Gets or sets the clock adjustment (in Symbols).
+            </summary>
+            <remarks>
+            The ClockAdjust property determines when the analyzer's digital demodulator samples the I/Q trajectory.
+            Minimum Value: -0.5 symbols
+            Maximum Value: +0.5 symbols
+            The digital demodulator used in this analyzer does not require symbol-clock timing signals to determine the location of symbols (detection decision points). Instead, the digital demodulator uses an algorithm to determine symbol locations.
+            Some digital communications systems contain nonlinearities that can bias the digital demodulator's estimation of the symbol clock position. You can use ClockAdjust to compensate for this "offset" and obtain a lower EVM (Error Vector Magnitude). 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.CpmIndex">
+            <summary>
+            Gets or sets the {h1, h2} values for CPM. 
+            </summary>
+            <remarks>
+            This value is ignored if <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsCpmIndexAuto"/> is true. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.EqualizerMode">
+            <summary>
+            Gets or sets the run mode of the Adaptive Equalizer.
+            </summary>
+            <remarks>
+            Determine whether the adaptive equalizer of the digital demodulation is currently running. To use the adaptive equalizer, it must be turned on (<see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsEqualized"/> set to true) and <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.EqualizerMode"/> must be set to <see cref="F:Agilent.SA.Vsa.DigitalDemod.EqualizerMode.Run"/>. You can set the equalizer to stop adapting and hold its current filter by setting <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.EqualizerMode"/> to <see cref="F:Agilent.SA.Vsa.DigitalDemod.EqualizerMode.Hold"/>. You can equalize to start over from its initial state by calling <see cref="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.EqualizerReset"/>.
+            For more information, see Digital Demodulation "About Adaptive Equalization" topic in the VSA Application help. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.EqualizerConvergence">
+            <summary>
+            Gets or sets the convergence parameter for the Adaptive Equalizer
+            </summary>
+            <remarks>
+            Controls the rate of convergence of the adaptive equalizer of the digital demodulation measurement. 
+            Convergence determines how quickly the equalization filter coefficients converge to the estimated 
+            Values for each measurement. Larger values converge faster.  This provides a trade-off in the number 
+            of measurements required for convergence of the equalization filter taps, and the stability of those taps. 
+            This property is only useful if the adaptive equalizer is on (<see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsEqualized"/>). Default Value: 1e-07.
+            For more, see Digital Demodulation "Convergence (equalization)" topic in the VSA Application help. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.EqualizerFilterLength">
+            <summary>
+            Gets or sets the length of the equalization filter, in symbols.
+            </summary>
+            <remarks>
+            Specifies the length of the adaptive equalization filter of the digital demodulation measurement. 
+            The value is specified as an odd whole number of symbols.
+            This property is only applied if the adaptive equalizer is enabled (<see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsEqualized"/>).
+            For more information, see the Digital Demodulation "Using the Equalization Filter" topic in the VSA Application help.
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.FilterAlphaBT">
+            <summary>
+            Gets or sets the α (alpha) or BT (bandwidth time product) parameter for measurement and reference filters.
+            </summary>
+            <remarks>
+            The α (alpha) parameter determines the filter characteristics of the Nyquist (or Raised Cosine) filters used by the digital demodulator. 
+            The BT (bandwidth time product) parameter determines the filter characteristics of the Gaussian filters used by the digital demodulator.
+            For more information about filter characteristics, see the Digital Demodulation "Alpha/BT" topic in the VSA Applications help.
+            For more information about digital demodulation measurements, see the Digital Demodulation "Setting up a Digital Demod Measurement" topic in the VSA Application help. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.FskDeviationReference">
+            <summary>
+            Gets or sets FSK frequency deviation reference value.  
+            This property is ignored unless the format is set to FSK2, FSK4, FSK8 or FSK16.
+            It is also ignored when FSK demod automatically determines the frequency deviation reference.
+            </summary>
+            <value>
+            The default value is 25 kHz.
+            </value>
+            <remarks>
+            This property is ignored except when the Format is set to
+            Fsk2, Fsk4, Fsk8, or Fsk16.  It is also ignored when
+            <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsFskDeviationReferenceAutomatic"/> is true.  When
+            <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsFskDeviationReferenceAutomatic"/> is false, this property
+            specifies the frequency deviation reference level, which
+            is used to construct the FSK Ref Time trace.
+            </remarks>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsFskDeviationReferenceAutomatic"></seealso>
+            <version>17.20</version>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.Format">
+            <summary>
+            Gets or sets the digital modulation format used by the signal under test.
+            </summary>
+            <remarks>
+            The digital modulation format is a fundamental parameter in defining modulation analysis. 
+            The selected format will determine what other modulation analysis properties are available.  
+            The selected format will also determine what trace data is available for display, what data 
+            is presented on those traces, and how those traces are labeled and presented.
+            For more information about digital demodulation measurements, see the Digital Demodulation 
+            "Setting up a Digital Demod Measurement" topic in the VSA Application help. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsCpmIndexAuto">
+            <summary>
+            Gets or sets a value indicating whether CPM (Continuous Phase Modulation) values for {h1, h2} (modulation index 
+            values) are auto-detected. 
+            </summary>
+            <remarks>
+            Applies to the <see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.CpmFM"/> digital modulation format. If true, 
+            the demodulator automatically determines the H1 and H2 modulator indices and 
+            <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.CpmIndex"/> is ignored. If false, then <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.CpmIndex"/> is 
+            used to determine the H1 and H2 modulation indices. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsCustomApskPhaseShiftNotUniform">
+            <summary>
+            Gets or sets a value indicating whether Custom APSK demodulation will use a non-uniform phase shift definition.
+            </summary>
+            <remarks>
+            This property only applies when <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.Format"/> is set to <see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.CustomApsk"/>, and 
+            a single ring is enabled with 4 or 6 states. When set to true, the resulting Custom APSK constellation will use the
+            specified Phase Offset value for the first state.  For 6 state case, the second and fifth states lie on the Q-axis. Symmetry across both axes are preserved. 
+            This constellation mapping is useful for some forms of Binary Offset Carrier modulation (like BOC{5,2}) and unbalanced QPSK.
+            </remarks>
+            <version>17.20</version>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsEqualized">
+            <summary>
+            Gets or sets a value indicating whether the equalization filter is enabled.
+            </summary>
+            <remarks>
+            Determine whether the digital demodulation measurement uses adaptive 
+            equalization. In addition to this property, you must set 
+            <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.EqualizerMode"/> to <see cref="F:Agilent.SA.Vsa.DigitalDemod.EqualizerMode.Run"/> to get 
+            the adaptive equalizer to run.  For more information, see Digital 
+            Demodulation "About Adaptive Equalization" topic in the VSA Application 
+            help. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsFrequencyMirrored">
+            <summary>
+            Gets or sets a value indicating whether modulation analysis will mirror the frequency spectrum. 
+            </summary>
+            <remarks>
+            Determine whether the measured signal will be mirrored around the center frequency 
+            prior to demodulation.
+            For a VSB (<see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.Vsb8"/> or <see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.Vsb16"/>) signal that uses 
+            a high-side pilot, this property must be set to true to demodulate the high-side 
+            pilot. Otherwise the demodulator cannot find and lock to the measured pilot signal.
+            Note turning on <see cref="P:Agilent.SA.Vsa.Frequency.IsMirrored"/> will again mirror the 
+            frequency spectrum around the center frequency. If <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsFrequencyMirrored"/> 
+            and <see cref="P:Agilent.SA.Vsa.Frequency.IsMirrored"/> are true, digital demodulation behaves as 
+            if neither of the properties is set to true. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsFskDeviationReferenceAutomatic">
+            <summary>
+            Gets or sets a value indicating whether FSK demod automatically determines
+            the frequency deviation reference.
+            </summary>
+            <value>
+            The default value is true.
+            </value>
+            <remarks>
+            This property is ignored except when the Format is set to
+            Fsk2, Fsk4, Fsk8, or Fsk16.  When this property is true,
+            the FSK demodulator automatically determines the frequency
+            deviation reference level from the measured signal.  When
+            the property is false, the frequency deviation reference
+            is determined by the <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.FskDeviationReference"/> property, and
+            the measured frequency deviation is ignored.
+            </remarks>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.FskDeviationReference"></seealso>
+            <version>17.20</version>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsIQImpairmentEstimationPointsPerSymbol">
+            <summary>
+            Gets or sets a value indicating whether points per symbol coupling is enabled for gain imbalance and quadrature 
+            skew measurements. 
+            </summary>
+            <remarks>
+            This property controls what measurement data is included in the Quadrature Skew and 
+            IQ Gain Imbalance error parameter calculations. True uses the number of 
+            points-per-symbol specified by <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.PointsPerSymbol"/> in the calculations. 
+            False uses the default number of Points per Symbol in calculations (the default 
+            values that the analyzer uses for points-per-symbol are shown in Digital Demodulation 
+            "Points/Symbol" topic in the VSA Application help).  The default values are typically 
+            optimal, but increased sensitivity to effects occurring between symbol decision points 
+            may be more apparent by choosing to couple the measurements to points per symbol. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsLowSignalNoiseRatio">
+            <summary>
+            Gets or sets a value indicating whether the low SNR enhancement mode for PSK and QAM signals is enabled. 
+            </summary>
+            <remarks>
+            Typically this should be set to false. However, in some cases noise causes 
+            loss of synchronization in the demodulation measurement. In these cases, setting 
+            this to true may provide a more robust measurement.
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsNormalized">
+            <summary>
+            Gets or sets a value indicating whether the measurement results present IQ data normalized to the ideal IQ state positions. 
+            </summary>
+            <remarks>
+            This affects the presentation of modulation analysis results, but does not alter the digital demodulator. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsOffsetQpskIQAligned">
+            <summary>
+            Gets or sets a value indicating whether Offset QPSK demodulation will align the I and Q parts of IQ Meas Time and IQ Ref Time
+            </summary>
+            <remarks>
+            This property only applies when <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.Format"/> is set to <see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.OffsetQpsk"/>.
+            When set to true, the resulting IQ Meas Time And IQ Ref Time no longer show what was actually transmitted.  
+            Instead the symbol points better represent the amount of "Offset EVM" in the signal.  This alignment does 
+            not affect the scalar metrics computed by the analyzer (RMS EVM, RMS Mag Error, etc.), nor does it affect 
+            other trace results like Error Vector Time. However, the IQ Meas Spectrum And IQ Ref Spectrum traces will 
+            change, because they are directly computed from IQ Meas Time And IQ Ref Time. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsPulseSearchEnabled">
+            <summary>
+            Gets or sets a value indicating whether pulse search is enabled. 
+            </summary>
+            <remarks>
+            Determine whether the digital demodulation measurement will search for a pulse (an RF envelope) to find 
+            the beginning of the data.  Digital communication systems often use pulsed transmissions to send and receive 
+            information in bursts. The carrier turns on when the transmitter transmits data; it turns off when the 
+            transmitter finishes transmitting data. If pulse search is on, the analyzer searches within the defined 
+            search length (<see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.SearchLength"/>) to locate the first complete pulse.  For more information, 
+            see the Digital Modulation "Pulse Search" topic in the VSA Application help.
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsUserReferenceFilterLikeHalfSine">
+            <summary>
+            Gets or sets a value indicating whether the user-defined reference filter for Offset QPSK uses Half-Sine pulse shaping.
+            </summary>
+            <remarks>
+            This parameter applies only when <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.Format"/> is set to <see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.OffsetQpsk"/> and a 
+            user-defined reference filter is used. The parameter indicates that the user-defined reference filter 
+            is a Half-Sine filter, or is similar enough to a Half-Sine filter that the transmitted signal has nearly 
+            constant amplitude. The parameter modifies the synchronization algorithms used by the demodulator. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsFilteredByReceiver">
+            <summary>
+            Gets or sets a value indicating whether the demodulator treats the measured signal as filtered prior to analysis. 
+            </summary>
+            <remarks>
+            Applies to the MSK Type 1 modulation format (<see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.Msk"/>). If true, the analyzer uses a 
+            non-standard, more robust demodulator algorithm to lock to signals that have been filtered by a receiver prior to 
+            the analyzer input. If false, the analyzer uses the standard demodulator algorithm which may fail to lock. This is
+            typically only required when measuring a signal within a receiver (such as provided by a logic analyzer 
+            connection to an RFIC).
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsConstellationSyncSearchEnabled">
+            <summary>
+            Gets or sets a value indicating whether sync search is enabled. 
+            </summary>
+            <remarks>
+            Determine whether constellation sync search is enabled for the digital demodulation measurement.
+            When true, <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ActiveSyncPattern"/> determines the pattern to search for in the input data,
+            and <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.SyncOffset"/> determines where in the demodulated symbols the pattern should be 
+            located. The search process consists of demodulating the data at the different possible
+            ideal constellation phase offsets, and aligning the symbols with the data pattern. If the data 
+            pattern cannot be found, a trace indicator of "SYNC NOT FOUND" is displayed.
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.MeasurementFilter">
+            <summary>
+            Gets or sets the measurement filter applied during the digital demodulation measurement.
+            </summary>
+            <remarks>
+            Determines the type of digital demodulation measurement filter to apply. If the measurement 
+            filter is <see cref="F:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter.UserDefined"/>, then the filter is constructed 
+            from the data register specified by <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.MeasurementFilterRegister"/>.  Details about 
+            digital demodulation filtering are available in the "About Filters" topic in the VSA Applications 
+            help. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.MeasurementFilterRegister">
+            <summary>
+            Gets or sets the data register to use for the user-defined measurement filter.
+            </summary>
+            <remarks>
+            This determines the data register to use for 
+            generating the digital demodulation measurement filter.
+            This only applies when <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.MeasurementFilter"/> is set to 
+            <see cref="F:Agilent.SA.Vsa.DigitalDemod.MeasurementFilter.UserDefined"/>. To contain a valid 
+            measurement filter, the data register must be a valid, non-empty, real, time domain trace.
+            Validity can be checked by calling <see cref="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ValidateUserFilter(Agilent.SA.Vsa.DataRegister)"/>.
+            <seealso cref="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ValidateUserFilter(Agilent.SA.Vsa.DataRegister)"/>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.MeasurementFilter"/>
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.NormalizationReference">
+            <summary>
+            Gets or sets the reference used for normalization of IQ
+            traces and EVM calculations.
+            </summary>
+            <remarks>
+            This applies to QAM and APSK modulation formats, but not
+            FSK or VSB.  When IsNormalized is true, this normalization
+            reference is used for all IQ traces and EVM results.  When
+            IsNormalized is false, this normalization reference is
+            still used for EVM results.
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsNormalized"/>
+            </remarks>
+            <version>16.20</version>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.PointsPerSymbol">
+            <summary>
+            Gets or sets the points per symbol generated in the demod measurement data. 
+            </summary>
+            <remarks>
+            Determine the number of output points per symbol generated by the digital demodulation measurement for 
+            the IQ/FSK measured time and IQ/FSK reference time results. The allowable Values are: 1, 2, 4, 5, 10, 
+            and 20 points/symbol. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ReferenceFilter">
+            <summary>
+            Gets or sets the reference filter applied during the digital demodulation measurement.
+            </summary>
+            <remarks>
+            Determines the type of digital demodulation reference filter to apply. If the reference 
+            filter is <see cref="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.UserDefined"/>, then the filter is constructed 
+            from the data register specified by <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ReferenceFilterRegister"/>.  Details about 
+            digital demodulation filtering are available in the "About Filters" topic in the VSA Applications 
+            help. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ReferenceFilterRegister">
+            <summary>
+            Gets or sets the data register to use for the user-defined reference filter.
+            </summary>
+            <remarks>
+            This determines the data register to use for 
+            generating the digital demodulation reference filter.
+            This only applies when <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ReferenceFilter"/> is set to 
+            <see cref="F:Agilent.SA.Vsa.DigitalDemod.ReferenceFilter.UserDefined"/>. To contain a valid 
+            reference filter, the data register must be a valid, non-empty, real, time domain trace.
+            Validity can be checked by calling <see cref="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ValidateUserFilter(Agilent.SA.Vsa.DataRegister)"/>.
+            <seealso cref="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ValidateUserFilter(Agilent.SA.Vsa.DataRegister)"/>
+            <seealso cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ReferenceFilter"/>
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ResultLength">
+            <summary>
+            Gets or sets the demod measurement result length (in symbols). 
+            </summary>
+            <remarks>
+            This is used to determine the number of symbols to demodulate.
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.SearchLength">
+            <summary>
+            Gets or sets the search length (in seconds) for the digital demodulation measurement.
+            </summary>
+            <remarks>
+            Determines the amount of data over which a search is performed when <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsPulseSearchEnabled"/> or <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsConstellationSyncSearchEnabled"/> is true. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.StarQamRing2Ratio">
+            <summary>
+            Gets or sets the ratio between the second Star-QAM ring radius and the inner ring radius. 
+            </summary>
+            <remarks>
+            Determines the Ring 2 to Ring 1 ratio for Star-QAM format measurements. 
+            Only applies to <see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.Star16Qam"/> and <see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.Star32Qam"/>
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.StarQamRing3Ratio">
+            <summary>
+            Gets or sets the ratio between the 3rd Star-QAM ring radius and the inner ring radius. 
+            </summary>
+            <remarks>
+            Determines the Ring 3 to Ring 1 ratio for Star-QAM format measurements. 
+            Only applies to <see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.Star32Qam"/>
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.StarQamRing4Ratio">
+            <summary>
+            Gets or sets the ratio between the fourth Star-QAM ring radius and the inner ring radius. 
+            </summary>
+            <remarks>
+            Determines the Ring 4 to Ring 1 ratio for Star-QAM format measurements. 
+            Only applies to <see cref="F:Agilent.SA.Vsa.DigitalDemod.Format.Star32Qam"/>
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.StateDefinitionLines">
+            <summary>
+            Gets the text description of the current state definitions. 
+            </summary>
+            <remarks>
+            Returns the current ideal IQ state definition as a string. This is the same information that is 
+            specified in a CSD (Constellation State Definitions) file if you elect to recall custom state definitions
+            with <see cref="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.RecallStateDefinitionsFile(System.String)"/>.
+            For most demodulation formats, the state definitions table represents the constellation diagram, and 
+            returns the bit definitions for each symbol in the constellation diagram.
+            For example, if the current demodulation format is QAM 16, the StateDefinitionLines property will return a 
+            string similar to the following, which shows the bit definitions for each state in the QAM constellation diagram:
+            <list type="table">
+            <item><item>0011</item><item>0010</item><item>0001</item><item>0000</item></item>
+            <item><item>0111</item><item>0110</item><item>0101</item><item>0100</item></item>
+            <item><item>1011</item><item>1010</item><item>1001</item><item>1000</item></item>
+            <item><item>1111</item><item>1110</item><item>1101</item><item>1100</item></item>
+            </list>
+            Each line is separation by a Carriage Return / Line Feed and each state on a line is separated by two spaces. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.SymbolRate">
+            <summary>
+            Gets or sets the demodulator symbol rate (Hz). 
+            </summary>
+            <remarks>
+            Determines the input symbol rate, in Hertz, for the digital demodulation measurement.
+            The input channels determine the maximum symbol rate that the analyzer can accurately 
+            measure. The analyzer can accurately measure symbol rates that are less than the 
+            maximum span of the selected input.
+            For more information, see the Digital Demodulation "Setting up a Measurement" topic 
+            in the VSA Application help. 
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.SyncOffset">
+            <summary>
+            Gets or sets the sync search offset (in symbols). 
+            </summary>
+            <remarks>
+            Determines the location of result length within search length. You can specify a 
+            positive or negative offset. If the <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ActiveSyncPattern"/> occurs before the 
+            start of result length, specify a negative offset. If it occurs after the start of 
+            result length, specify a positive offset.
+            Applies only when <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsConstellationSyncSearchEnabled"/> is true.
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.ActiveSyncPattern">
+            <summary>
+            Gets or sets the sync search binary pattern. 
+            </summary>
+            <remarks>
+            A string of 1's and 0's to use as the synchronization pattern for sync search during digital demodulation.
+            <para>Minimum length: 1 Symbol</para>
+            <para>Maximum length: 32 symbols</para>
+            The pattern must be entered as binary digits. Characters other than one ('1') and zero ('0') are ignored. 
+            Only applies if <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.IsConstellationSyncSearchEnabled"/> is true.
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.SyncPatternNames">
+            <summary>
+            Gets a list of names of currently available sync search pattern names.
+            </summary>
+            <remarks>
+            Returns an array of strings containing the names of all named sync search patterns. 
+            <see cref="M:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.GetSyncPattern(System.String)"/> can be used to retrieve the pattern associated with each 
+            pattern name. <see cref="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.SyncPatternNames"/> can be used to iterate through the 
+            collection of patterns.
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.UserRotate">
+            <summary>
+            Gets or sets the demod user rotation value (in degrees).
+            </summary>
+            <remarks>
+            Rotates the Meas/Ref Time data and corresponding ideal state positions 0 to 360 degrees.
+            </remarks>
+        </member>
+        <member name="P:Agilent.SA.Vsa.DigitalDemod.MeasurementExtension.CustomApskRings">
+            <summary>
+            Gets the collection of <see cref="T:Agilent.SA.Vsa.DigitalDemod.CustomApskRing"/> objects representing the 
+            Custom APSK per-ring settings.
+            </summary>
+            <version>14.00</version>
+        </member>
+    </members>
+</doc>
